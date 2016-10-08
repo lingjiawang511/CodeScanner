@@ -1,5 +1,5 @@
 Dependencies for Project 'CodeScanner', Target 'Target 1': (DO NOT MODIFY !)
-F (..\USER\main.c)(0x57E4D1C7)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\include -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\USER -I..\USER\delay -I..\USER\led -I..\USER\sys-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+F (..\USER\main.c)(0x57F85B52)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\include -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\USER -I..\USER\delay -I..\USER\led -I..\USER\sys-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
 I (..\include\HeadType.h)(0x57CFB9B4)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x51F7E136)
 I (..\Libraries\CMSIS\core_cm3.h)(0x4D523B58)
@@ -377,4 +377,4 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4E24EF24)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4E24EF24)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4E24EF24)
 F (..\Libraries\CMSIS\startup\arm\startup_stm32f10x_md.s)(0x4D783CD2)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x--list .\obj\startup_stm32f10x_md.lst --xref -o .\obj\startup_stm32f10x_md.o --depend .\obj\startup_stm32f10x_md.d)
-F (..\调试备注.txt)(0x57A993A0)()
+F (..\调试备注.txt)(0x57F8587D)()
