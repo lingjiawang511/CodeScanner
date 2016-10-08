@@ -30,8 +30,6 @@ int main(void)
     TIM3_Config();
 		TIM4_Config();
 		delay_ms(1000);
-			delay_ms(1000);
-			delay_ms(1000);
     while(1){
         Dispose_Data_For_Host();
         Respond_Host_Comm();
