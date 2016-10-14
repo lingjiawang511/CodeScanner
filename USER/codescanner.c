@@ -1,9 +1,9 @@
 #include "codescanner.h"
 #include"HeadType.h"
 
+
 Host_COMM_Union_Type Host_Control;
 Host_Answer_Type 	 Host_Answer;
-
 
 //=============================================================================
 //函数名称:Scanner_GPIO_Config
@@ -39,7 +39,7 @@ void Scanner_GPIO_Config(void)
 	Scanner_Trigger_High;
 	Scanner_Polarity_High;
 	Scanner_Wakeup_Low;
-	delay_ms(30);
+	delay_ms(100);
 	Scanner_Wakeup_High;
 	//test
 	Host_Control.control.scanner_time = 2*3;
@@ -86,6 +86,7 @@ void scanner_scan(void)
 					ERR_Beep_State = 1;
 					Host_Answer.answer_state = 0;
 					trigger_static = 1;	//超时完成第一时间先扫描
+					Scanner_Trigger_High;//超时完成第一时间先扫描，脉冲驱动
 				}
 				Host_Answer.Nanswer_timeout--;
 		 }

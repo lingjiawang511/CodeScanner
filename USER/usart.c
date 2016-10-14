@@ -440,6 +440,7 @@ static u8 Execute_Host_Comm(void)
 					break;
 		case 0x02: 	GLED_ON;
 					Gled_Light_Static = 1;
+					Gled_Light_Time = Host_Control.control.gled_num * 200;	//5ms*200=1S
 					Host_Control.control.gled_state = 0;
 					break;
 	    case 0x03: 	Gled_Num = Host_Control.control.gled_num;
@@ -455,6 +456,7 @@ static u8 Execute_Host_Comm(void)
 					break;
 		case 0x02: 	RLED_ON;
 					Rled_Light_Static = 1;
+					Rled_Light_Time = Host_Control.control.rled_num * 200;	//5ms*200=1S
 					Host_Control.control.rled_state = 0;
 					break;
 	    case 0x03: 	Rled_Num = Host_Control.control.rled_num;
@@ -630,7 +632,8 @@ static void  Copy_Scanner_Data(void)
 //=============================================================================
 void Dispose_Data_For_Host(void)
 {
-   if (1 == Usart2_Control_Data.rx_aframe){    
+
+	if (1 == Usart2_Control_Data.rx_aframe){    
    		if(response_reader()){ 		
    			Copy_Scanner_Data();
 		}else{

@@ -5,6 +5,8 @@ u8 Gled_Num;
 u8 Rled_Num;
 u8 Gled_Light_Static;
 u8 Rled_Light_Static;
+u16 Gled_Light_Time;
+u16 Rled_Light_Time;
 //=============================================================================
 //函数名称: LED_GPIO_Config
 //功能概要:LED灯引脚配置
@@ -29,6 +31,8 @@ void LED_GPIO_Config(void)
 
 	GLED_OFF;
 	RLED_OFF;
+	Gled_Light_Time = 0;
+	Rled_Light_Time = 0;
 }
 
 //=============================================================================
@@ -98,18 +102,20 @@ void Led_Flash(void)
 	Rled_Flash();
 	if(Gled_Light_Static == 1){
 		gled_light_time++;
-		if(gled_light_time >= LED_LIGHT_TIMEOUT ){
+		if(gled_light_time >= Gled_Light_Time ){
 			GLED_OFF;
 			Gled_Light_Static = 0;
 			gled_light_time = 0;
+			Gled_Light_Time = 0;
 		}
 	}
 	if(Rled_Light_Static == 1){
 		rled_light_time++;
-		if(rled_light_time >= LED_LIGHT_TIMEOUT ){
+		if(rled_light_time >= Rled_Light_Time ){
 			RLED_OFF;
 			Rled_Light_Static = 0;
 			rled_light_time = 0;
+			Rled_Light_Time = 0;
 		}
 	}
 }

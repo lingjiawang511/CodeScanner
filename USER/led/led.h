@@ -12,6 +12,8 @@ extern u8 Gled_Num;
 extern u8 Rled_Num;
 extern u8 Gled_Light_Static;
 extern u8 Rled_Light_Static;
+extern u16 Gled_Light_Time;
+extern u16 Rled_Light_Time;
 void LED_GPIO_Config(void);
 void Led_Flash(void);
 
