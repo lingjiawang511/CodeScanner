@@ -27,7 +27,7 @@ void BEEP_GPIO_Config(void)
 	GPIO_Init(GPIOA, &GPIO_InitStructure);
 	ERR_Beep_State = 0;
 	Beep_Num = 0;
-	Beep_Time = 1000;
+	Beep_Time = BEEP_LOUD_TIME;
 }
 //=============================================================================
 //函数名称:Beep
@@ -58,7 +58,7 @@ void Beep(u16 retry)
 //=============================================================================
 void Beep_LoudNum(void )
 {
-	static u8 retry = 60; //蜂鸣器响之后的间隔60*5ms=300ms
+	static u8 retry = BEEP_PAUSE_TIME; //蜂鸣器响之后的间隔60*5ms=300ms
 	if(Beep_Time){
 		return;
 	}
@@ -66,8 +66,8 @@ void Beep_LoudNum(void )
 		retry--;
 		if(retry <= 0){//蜂鸣器时间间隔
 			Beep_Num--;	  	//蜂鸣器响的次数
-			Beep_Time = 1000;//相当于五十个脉冲 100*2ms=200ms
-			retry = 60;	
+			Beep_Time = BEEP_LOUD_TIME;//相当于500个脉冲 1000*0.2ms=200ms
+			retry = BEEP_PAUSE_TIME;	
 		}
 	}	
 }

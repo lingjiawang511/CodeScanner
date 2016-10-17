@@ -184,7 +184,6 @@ void TIM3_IRQHandler(void)
                 Usart2_Control_Data.rx_index = 0;
             }
         }
-	 //  Beep_Response();
        TIM_ClearITPendingBit(TIM3 , TIM_FLAG_Update);     
 	}		 	
 }

@@ -75,7 +75,8 @@ void TIM2_Config(void )
 	TIM_ClearFlag(TIM2, TIM_FLAG_Update);						
 	TIM_ITConfig(TIM2, TIM_IT_Update, ENABLE);
 	TIM_Cmd(TIM2, ENABLE);	
-    TIM2_Interrupts_Config();
+	
+  TIM2_Interrupts_Config();
 }
 //=============================================================================
 //º¯ÊýÃû³Æ:TIM3_Config
@@ -85,7 +86,7 @@ void TIM2_Config(void )
 //=============================================================================
 void TIM3_Config(void)
 {
-    TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
+  TIM_TimeBaseInitTypeDef  TIM_TimeBaseStructure;
     
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM3 , ENABLE);
 	TIM_DeInit(TIM3);
@@ -98,8 +99,8 @@ void TIM3_Config(void)
 	TIM_ClearFlag(TIM3, TIM_FLAG_Update);
 	TIM_ITConfig(TIM3, TIM_IT_Update, ENABLE);
 	TIM_Cmd(TIM3, ENABLE );    
-    
-    TIM3_Interrupts_Config();
+
+  TIM3_Interrupts_Config();
 }
 
 //=============================================================================
@@ -114,7 +115,7 @@ void TIM4_Config(void)
     
 	RCC_APB1PeriphClockCmd(RCC_APB1Periph_TIM4 , ENABLE);
 	TIM_DeInit(TIM4);
-	TIM_TimeBaseStructure.TIM_Period = 199;    //2MS
+	TIM_TimeBaseStructure.TIM_Period = 199;    //0.2MS
 	TIM_TimeBaseStructure.TIM_Prescaler = (72 - 1);
 	TIM_TimeBaseStructure.TIM_ClockDivision = TIM_CKD_DIV1;
 	TIM_TimeBaseStructure.TIM_CounterMode = TIM_CounterMode_Up;

@@ -39,8 +39,10 @@ void Scanner_GPIO_Config(void)
 	Scanner_Trigger_High;
 	Scanner_Polarity_High;
 	Scanner_Wakeup_Low;
-	delay_ms(100);
+	delay_ms(50);
 	Scanner_Wakeup_High;
+	delay_ms(50);
+	Scanner_Trigger_Low;
 	//test
 	Host_Control.control.scanner_time = 2*3;
 	Host_Answer.answer_state = 0;
@@ -55,11 +57,11 @@ void Scanner_GPIO_Config(void)
 //=============================================================================
 void scanner_scan(void)
 {	
-	static u16 scan_time = 600;
-	static u16 scan_time_old = 600;
+	static u16 scan_time = DEFAULT_SCANTIME;					//默认扫描周期时间
+	static u16 scan_time_old = DEFAULT_SCANTIME;
 	static u8  trigger_static = 0;
 
-	if(Host_Answer.answer_state == 2){//第一时间先响应参数修改
+	if(Host_Answer.answer_state == 2){//第一时间先响应参数修改,上位机控制扫描头扫描时间
 		if(Host_Control.control.scanner_time <0X02){
 			Host_Control.control.scanner_time = 0X02;
 		}
@@ -68,7 +70,7 @@ void scanner_scan(void)
 		Host_Answer.answer_state = 1;//修改之后变为主机响应状态
 		Host_Answer.answer_timeout = ANSWER_SCANTIME;
 	}
-	if(Host_Answer.answer_state == 1){//主机响应了，就不以固定的扫描周期扫描了
+	if(Host_Answer.answer_state == 1){//主机响应了，就不以固定的扫描周期扫描了，扫描到二维码，一直扫描到设置值结束
 		if(Host_Answer.answer_timeout <=0){
 			Host_Answer.answer_state = 0;
 			Host_Answer.start_timeout = 0;
