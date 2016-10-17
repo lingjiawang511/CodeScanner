@@ -87,6 +87,15 @@ void scanner_scan(void)
 					Host_Answer.answer_state = 0;
 					trigger_static = 1;	//超时完成第一时间先扫描
 					Scanner_Trigger_High;//超时完成第一时间先扫描，脉冲驱动
+					
+					Host_Control.control.gled_state = 0;
+					Gled_Light_Static = 0;
+					Gled_Light_Time = 0;
+					Gled_Num = 0;
+					GLED_OFF;
+					Host_Control.control.rled_state = 0;
+					Rled_Light_Static = 0;
+					Rled_Light_Time = 0;
 				}
 				Host_Answer.Nanswer_timeout--;
 		 }

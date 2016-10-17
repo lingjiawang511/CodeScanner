@@ -437,6 +437,8 @@ static u8 Execute_Host_Comm(void)
 					break;
 		case 0x01: 	GLED_OFF;
 					Host_Control.control.gled_state = 0;
+					Gled_Light_Static = 0;
+					Gled_Light_Time = 0;
 					break;
 		case 0x02: 	GLED_ON;
 					Gled_Light_Static = 1;
@@ -445,6 +447,8 @@ static u8 Execute_Host_Comm(void)
 					break;
 	    case 0x03: 	Gled_Num = Host_Control.control.gled_num;
 					Host_Control.control.gled_state = 0;
+					Gled_Light_Static = 0;
+					Gled_Light_Time = 0;
 					break;
 		default : break;
 		}
@@ -453,6 +457,8 @@ static u8 Execute_Host_Comm(void)
 					break;
 		case 0x01: 	RLED_OFF;
 					Host_Control.control.rled_state = 0;
+					Rled_Light_Static = 0;
+					Rled_Light_Time = 0;
 					break;
 		case 0x02: 	RLED_ON;
 					Rled_Light_Static = 1;
@@ -461,6 +467,8 @@ static u8 Execute_Host_Comm(void)
 					break;
 	    case 0x03: 	Rled_Num = Host_Control.control.rled_num;
 					Host_Control.control.rled_state = 0;
+					Rled_Light_Static = 0;
+					Rled_Light_Time = 0;
 					break;
 		default : break;
 		}

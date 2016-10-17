@@ -98,8 +98,6 @@ void Led_Flash(void)
 {
 	static u16 gled_light_time = 0;
 	static u16 rled_light_time = 0;
-	Gled_Flash();
-	Rled_Flash();
 	if(Gled_Light_Static == 1){
 		gled_light_time++;
 		if(gled_light_time >= Gled_Light_Time ){
@@ -108,6 +106,8 @@ void Led_Flash(void)
 			gled_light_time = 0;
 			Gled_Light_Time = 0;
 		}
+	}else{
+			Gled_Flash();
 	}
 	if(Rled_Light_Static == 1){
 		rled_light_time++;
@@ -117,6 +117,8 @@ void Led_Flash(void)
 			rled_light_time = 0;
 			Rled_Light_Time = 0;
 		}
+	}else{
+			Rled_Flash();
 	}
 }
 
