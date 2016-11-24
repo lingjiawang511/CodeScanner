@@ -1,6 +1,6 @@
 Dependencies for Project 'CodeScanner', Target 'Target 1': (DO NOT MODIFY !)
-F (..\USER\main.c)(0x58008875)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\include -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\USER -I..\USER\delay -I..\USER\led -I..\USER\sys-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
-I (G:\program\CodeScanner\include\HeadType.h)(0x57CFB9B4)
+F (..\USER\main.c)(0x5804349D)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\include -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\USER -I..\USER\delay -I..\USER\led -I..\USER\sys-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o .\obj\main.o --omf_browse .\obj\main.crf --depend .\obj\main.d)
+I (G:\program\CodeScanner\include\HeadType.h)(0x58042A57)
 I (G:\program\CodeScanner\Libraries\CMSIS\stm32f10x.h)(0x51F7E136)
 I (G:\program\CodeScanner\Libraries\CMSIS\core_cm3.h)(0x4D523B58)
 I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x50F96150)
@@ -25,7 +25,7 @@ I (G:\program\CodeScanner\USER\beep.h)(0x57ABD57A)
 I (G:\program\CodeScanner\USER\codescanner.h)(0x5799CD5E)
 I (G:\program\CodeScanner\include\usart.h)(0x57956542)
 I (G:\program\CodeScanner\include\TIM.h)(0x57AAC046)
-F (..\USER\TIM.C)(0x57ABCEA9)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\include -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\USER -I..\USER\delay -I..\USER\led -I..\USER\sys-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o .\obj\tim.o --omf_browse .\obj\tim.crf --depend .\obj\tim.d)
+F (..\USER\TIM.C)(0x58042A04)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\include -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\USER -I..\USER\delay -I..\USER\led -I..\USER\sys-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o .\obj\tim.o --omf_browse .\obj\tim.crf --depend .\obj\tim.d)
 I (..\include\TIM.h)(0x57AAC046)
 I (..\Libraries\CMSIS\stm32f10x.h)(0x51F7E136)
 I (..\Libraries\CMSIS\core_cm3.h)(0x4D523B58)
@@ -44,7 +44,7 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4E24EF24)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4E24EF24)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4E24EF24)
 F (..\USER\usart.c)(0x58009F5A)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\include -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\USER -I..\USER\delay -I..\USER\led -I..\USER\sys-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o .\obj\usart.o --omf_browse .\obj\usart.crf --depend .\obj\usart.d)
-I (G:\program\CodeScanner\include\HeadType.h)(0x57CFB9B4)
+I (G:\program\CodeScanner\include\HeadType.h)(0x58042A57)
 I (G:\program\CodeScanner\Libraries\CMSIS\stm32f10x.h)(0x51F7E136)
 I (G:\program\CodeScanner\Libraries\CMSIS\core_cm3.h)(0x4D523B58)
 I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x50F96150)
@@ -68,7 +68,7 @@ I (G:\program\CodeScanner\USER\delay\delay.h)(0x578C47ED)
 I (G:\program\CodeScanner\USER\beep.h)(0x57ABD57A)
 I (G:\program\CodeScanner\USER\codescanner.h)(0x5799CD5E)
 I (G:\program\CodeScanner\include\usart.h)(0x57956542)
-F (..\USER\stm32f10x_it.c)(0x57ABD544)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\include -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\USER -I..\USER\delay -I..\USER\led -I..\USER\sys-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o .\obj\stm32f10x_it.o --omf_browse .\obj\stm32f10x_it.crf --depend .\obj\stm32f10x_it.d)
+F (..\USER\stm32f10x_it.c)(0x58042AA5)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\include -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\USER -I..\USER\delay -I..\USER\led -I..\USER\sys-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o .\obj\stm32f10x_it.o --omf_browse .\obj\stm32f10x_it.crf --depend .\obj\stm32f10x_it.d)
 I (G:\program\CodeScanner\include\stm32f10x_it.h)(0x4D99A59E)
 I (G:\program\CodeScanner\Libraries\CMSIS\stm32f10x.h)(0x51F7E136)
 I (G:\program\CodeScanner\Libraries\CMSIS\core_cm3.h)(0x4D523B58)
@@ -86,7 +86,7 @@ I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi
 I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4E24EF24)
 I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4E24EF24)
 I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4E24EF24)
-I (G:\program\CodeScanner\include\HeadType.h)(0x57CFB9B4)
+I (G:\program\CodeScanner\include\HeadType.h)(0x58042A57)
 I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x50F96150)
 I (C:\Keil\ARM\ARMCC\include\string.h)(0x50F96150)
 I (G:\program\CodeScanner\USER\led\led.h)(0x5800734A)
@@ -130,7 +130,7 @@ I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi
 I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4E24EF24)
 I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4E24EF24)
 I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4E24EF24)
-F (..\USER\codescanner.c)(0x5800A595)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\include -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\USER -I..\USER\delay -I..\USER\led -I..\USER\sys-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o .\obj\codescanner.o --omf_browse .\obj\codescanner.crf --depend .\obj\codescanner.d)
+F (..\USER\codescanner.c)(0x58042CBE)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\include -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\USER -I..\USER\delay -I..\USER\led -I..\USER\sys-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o .\obj\codescanner.o --omf_browse .\obj\codescanner.crf --depend .\obj\codescanner.d)
 I (G:\program\CodeScanner\USER\codescanner.h)(0x5799CD5E)
 I (G:\program\CodeScanner\Libraries\CMSIS\stm32f10x.h)(0x51F7E136)
 I (G:\program\CodeScanner\Libraries\CMSIS\core_cm3.h)(0x4D523B58)
@@ -148,14 +148,14 @@ I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi
 I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4E24EF24)
 I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4E24EF24)
 I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4E24EF24)
-I (G:\program\CodeScanner\include\HeadType.h)(0x57CFB9B4)
+I (G:\program\CodeScanner\include\HeadType.h)(0x58042A57)
 I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x50F96150)
 I (C:\Keil\ARM\ARMCC\include\string.h)(0x50F96150)
 I (G:\program\CodeScanner\USER\led\led.h)(0x5800734A)
 I (G:\program\CodeScanner\USER\delay\delay.h)(0x578C47ED)
 I (G:\program\CodeScanner\USER\beep.h)(0x57ABD57A)
 F (..\USER\crc16.c)(0x57AA7D1D)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\include -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\USER -I..\USER\delay -I..\USER\led -I..\USER\sys-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o .\obj\crc16.o --omf_browse .\obj\crc16.crf --depend .\obj\crc16.d)
-I (G:\program\CodeScanner\include\HeadType.h)(0x57CFB9B4)
+I (G:\program\CodeScanner\include\HeadType.h)(0x58042A57)
 I (G:\program\CodeScanner\Libraries\CMSIS\stm32f10x.h)(0x51F7E136)
 I (G:\program\CodeScanner\Libraries\CMSIS\core_cm3.h)(0x4D523B58)
 I (C:\Keil\ARM\ARMCC\include\stdint.h)(0x50F96150)
@@ -178,7 +178,7 @@ I (G:\program\CodeScanner\USER\led\led.h)(0x5800734A)
 I (G:\program\CodeScanner\USER\delay\delay.h)(0x578C47ED)
 I (G:\program\CodeScanner\USER\beep.h)(0x57ABD57A)
 I (G:\program\CodeScanner\USER\codescanner.h)(0x5799CD5E)
-F (..\USER\beep.c)(0x57ABD4C8)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\include -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\USER -I..\USER\delay -I..\USER\led -I..\USER\sys-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o .\obj\beep.o --omf_browse .\obj\beep.crf --depend .\obj\beep.d)
+F (..\USER\beep.c)(0x58042A81)(-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I..\include -I..\Libraries\CMSIS -I..\Libraries\STM32F10x_StdPeriph_Driver\inc -I..\USER -I..\USER\delay -I..\USER\led -I..\USER\sys-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x-DUSE_STDPERIPH_DRIVER -DSTM32F10X_HD -o .\obj\beep.o --omf_browse .\obj\beep.crf --depend .\obj\beep.d)
 I (G:\program\CodeScanner\USER\beep.h)(0x57ABD57A)
 I (G:\program\CodeScanner\Libraries\CMSIS\stm32f10x.h)(0x51F7E136)
 I (G:\program\CodeScanner\Libraries\CMSIS\core_cm3.h)(0x4D523B58)
@@ -196,7 +196,7 @@ I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_spi
 I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4E24EF24)
 I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4E24EF24)
 I (G:\program\CodeScanner\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4E24EF24)
-I (G:\program\CodeScanner\include\HeadType.h)(0x57CFB9B4)
+I (G:\program\CodeScanner\include\HeadType.h)(0x58042A57)
 I (C:\Keil\ARM\ARMCC\include\stdio.h)(0x50F96150)
 I (C:\Keil\ARM\ARMCC\include\string.h)(0x50F96150)
 I (G:\program\CodeScanner\USER\led\led.h)(0x5800734A)
@@ -377,4 +377,4 @@ I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_tim.h)(0x4E24EF24)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_usart.h)(0x4E24EF24)
 I (..\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h)(0x4E24EF24)
 F (..\Libraries\CMSIS\startup\arm\startup_stm32f10x_md.s)(0x4D783CD2)(--cpu Cortex-M3 -g --apcs=interwork --pd "__MICROLIB SETA 1"-I C:\Keil\ARM\RV31\INC-I C:\Keil\ARM\CMSIS\Include-I C:\Keil\ARM\Inc\ST\STM32F10x--list .\obj\startup_stm32f10x_md.lst --xref -o .\obj\startup_stm32f10x_md.o --depend .\obj\startup_stm32f10x_md.d)
-F (..\调试备注.txt)(0x5800A4CB)()
+F (..\调试备注.txt)(0x5804232E)()
